@@ -1,8 +1,10 @@
 const express = require("express");
-const { offerStory } = require("./story.controller");
+const { offerStory, addStory } = require("./story.controller");
 
 const router = express.Router();
 
 router.post("/:number", offerStory);
+
+router.post("/add/:number", addStory);
 
 module.exports = router;

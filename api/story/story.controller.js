@@ -5,6 +5,8 @@ const { mailSender, mailSenderPass } = require("../constants");
 
 class StoryController {
   async addStory(req, res) {
+    const number = req.params.number;
+    const story = req.body;
     const policeman = await policemanModel.findOne({ number });
     try {
       const newStory = await storyModel.create({
