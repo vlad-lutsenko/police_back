@@ -26,7 +26,11 @@ class Server {
     this.server.use(express.json());
     this.server.use(
       cors({
-        origin: ["http://localhost:3001", "https://sampleforklok.netlify.app/"],
+        origin: [
+          "http://localhost:3001",
+          "https://sampleforklok.netlify.app/",
+          "https://sampleforklok.netlify.app/last-duty",
+        ],
       })
     );
   }
