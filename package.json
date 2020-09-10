@@ -1,0 +1,30 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "police_back",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.2",
+    "nodemailer": "^6.4.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlad-lutsenko/police_back.git"
+  },
+  "author": "YOUR_NAME",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlad-lutsenko/police_back/issues"
+  },
+  "homepage": "https://github.com/vlad-lutsenko/police_back#readme"
+}
