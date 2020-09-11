@@ -12,9 +12,9 @@ class Server {
   }
   async start() {
     this.initServer();
+    await this.initDatabase();
     this.initMiddlewares();
     this.initRoutes();
-    await this.initDatabase();
     this.startListening();
   }
 
@@ -48,7 +48,7 @@ class Server {
   startListening() {
     return this.server.listen(PORT, (err) => {
       err
-        ? console.error(" port listening error")
+        ? console.error("port listening error", err)
         : console.log("server listening at port", PORT);
     });
   }
