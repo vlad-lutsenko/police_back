@@ -24,7 +24,11 @@ class Server {
 
   initMiddlewares() {
     this.server.use(express.json());
-    this.server.use(cors());
+    this.server.use(
+      cors({
+        origin: ["http://localhost:3001", "https://sampleforklok.netlify.app"],
+      })
+    );
   }
 
   initRoutes() {
