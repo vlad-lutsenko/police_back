@@ -24,16 +24,7 @@ class Server {
 
   initMiddlewares() {
     this.server.use(express.json());
-    this.server.use(
-      cors({
-        // origin: [
-        //   "http://localhost:3001",
-        //   "https://sampleforklok.netlify.app/",
-        //   "https://sampleforklok.netlify.app/last-duty",
-        // ],
-        origin: true,
-      })
-    );
+    this.server.use(cors());
   }
 
   initRoutes() {
