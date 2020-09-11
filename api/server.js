@@ -16,7 +16,6 @@ class Server {
     this.initMiddlewares();
     this.initRoutes();
     this.startListening();
-    this.server.use(express.static("some random text"));
   }
 
   initServer() {
